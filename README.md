@@ -1,2 +1,2 @@
 # INT-248
-HUMAN POSE Estimation.
+This project is about different vehicle detection.
