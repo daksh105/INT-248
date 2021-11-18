@@ -12,3 +12,11 @@ def calc_car(a):
     lb = label.count('car')
     print('Number of cars in image- ' + str(lb))
     return lb
+
+for i in range(1, 6):
+
+    vehicles = calc_car(f"vehicle{i}.jpeg")
+    print(f"Car count for {i}th image : {vehicles[0]}")
+    print(f"Truck count for {i}th image : {vehicles[1]}")
+    print(f"Bus count for {i}th image : {vehicles[2]}")
+    print()
