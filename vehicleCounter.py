@@ -10,11 +10,11 @@ def calc_car(a):
     plt.imshow(output_image)
     plt.show()
     lb = label.count('car')
-    print('Number of cars in image- ' + str(lb))
-    return lb
+    truck = label.count('truck')
+    bus = label.count('bus')
+    return [cars, truck, bus]
 
 for i in range(1, 6):
-
     vehicles = calc_car(f"vehicle{i}.jpeg")
     print(f"Car count for {i}th image : {vehicles[0]}")
     print(f"Truck count for {i}th image : {vehicles[1]}")
